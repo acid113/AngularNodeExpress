@@ -1,0 +1,28 @@
+<legend>Register User</legend>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+    <!-- First Name -->
+    <div class="form-group" [ngClass]="{'has-error': invalidFirstName()}">  
+        <label for="firstName" class="control-label">First Name</label>
+        <input formControlName="firstName" id="firstName" name="firstName" type="text" class="form-control">
+        <p id="firstNameError" class="help-block" *ngIf="invalidFirstName()">First Name is required</p>
+    </div>
+
+    <!-- Last Name -->
+    <div class="form-group" [ngClass]="{'has-error': invalidLastName()}">  
+        <label for="lastName" class="control-label">Last Name</label>
+        <input formControlName="lastName" id="lastName" name="lastName" type="text" class="form-control">
+        <p id="lastNameError" class="help-block" *ngIf="invalidLastName()">Last Name is required</p>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group" [ngClass]="{'has-error': invalidEmail()}">  
+        <label for="email" class="control-label">Email</label>
+        <input formControlName="email" id="email" name="email" type="text" class="form-control" placeholder="your@email.com">
+        <p id="emailError" class="help-block" *ngIf="invalidEmail()">Invalid email format</p>
+    </div>
+
+    <div class="form-group">  <!-- Register button -->
+        <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+</form>

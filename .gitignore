@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/AngularNodeExpress/DesignTimeBuild
+/.vs/AngularNodeExpress/v16/Server/sqlite3
+/NodeExpressAPI/node_modules
+/NodeExpressAPI/obj/Debug
+/WebUI/Properties
