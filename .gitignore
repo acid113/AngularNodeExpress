@@ -6,4 +6,4 @@
 /.vs/AngularNodeExpress/v16/Server/sqlite3
 /NodeExpressAPI/node_modules
 /NodeExpressAPI/obj/Debug
-/WebUI/Properties
+/.vs
